@@ -14,7 +14,7 @@
       <li><span class="bullet-point">ℹ️</span>Take a look at <a href="https://cdvillard.github.io" target="_blank" rel="noopener">my old website</a></li>
       <li><span class="bullet-point">🖋️</span>Check out some of <a href="https://codepen.io/cdvillard" target="_blank" rel="noopener">my CodePens</a></li>
       <li><span class="bullet-point">👨‍💻</span>Browse through <a href="https://github.com/cdvillard" target="_blank" rel="noopener">my GitHub repos</a></li>
-      <li><span class="bullet-point">📄</span>Take a gander at <a href="" target="_blank" rel="noopener">my resume</a></li>
+      <li><span class="bullet-point">📄</span>Take a gander at <g-link to="~/assets/files/CDVillard.pdf" target="_blank" rel="noopener">my resume</g-link></li>
       <li><span class="bullet-point">📧</span><a href="mailto:c.d.villard@gmail.com" target="_blank" rel="noopener">Get in touch with me.</a></li>
     </ul>
 
