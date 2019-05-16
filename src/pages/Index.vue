@@ -1,33 +1,70 @@
 <template>
-  <Layout>
-    
+  <Temp>
+
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    
-    <h1>Hello, world!</h1>
-   
+    <g-image class="rounded-headshot" alt="Picture of Charles Villard" src="~/assets/images/headshot.jpg"/>
+
+    <h1>Thanks for visiting!</h1>
+
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
+      I'm going through a little bit of a transition as I rebuild my site, so this is a small "pardon the dust" placeholder until I'm back up and running. In the meantime, feel free to:
     </p>
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <ul>
+      <li><span class="bullet-point">ℹ️</span>Take a look at <a href="https://cdvillard.github.io" target="_blank" rel="noopener">my old website</a></li>
+      <li><span class="bullet-point">🖋️</span>Check out some of <a href="https://codepen.io/cdvillard" target="_blank" rel="noopener">my CodePens</a></li>
+      <li><span class="bullet-point">👨‍💻</span>Browse through <a href="https://github.com/cdvillard" target="_blank" rel="noopener">my GitHub repos</a></li>
+      <li><span class="bullet-point">📄</span>Take a gander at <a href="" target="_blank" rel="noopener">my resume</a></li>
+      <li><span class="bullet-point">📧</span><a href="mailto:c.d.villard@gmail.com" target="_blank" rel="noopener">Get in touch with me.</a></li>
+    </ul>
 
-  </Layout>
+  </Temp>
 </template>
 
 <script>
+import Temp from "~/layouts/Temp.vue";
+
 export default {
+  components: {
+    Temp
+  },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Charles Villard'
   }
 }
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
+  h1 {
+
+  }
+  img {
+    display: block;
+    border-radius: 100%;
+    max-width: 200px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    vertical-align: center;
+  }
+
+  li span {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  @media screen and (max-width: 351px) {
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
 </style>
