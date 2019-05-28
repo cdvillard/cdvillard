@@ -18,26 +18,38 @@
       <li><span class="bullet-point">📧</span><a href="mailto:c.d.villard@gmail.com" target="_blank" rel="noopener">Get in touch with me.</a></li>
     </ul>
 
+    <BlogList/>
   </Temp>
 </template>
 
 <script>
 import Temp from "~/layouts/Temp.vue";
+import BlogList from "~/components/blog-list.vue";
+
+import axios from "axios";
 
 export default {
   components: {
-    Temp
+    Temp,
+    BlogList
   },
   metaInfo: {
     title: 'Charles Villard'
-  }
+  },
+  //   mounted() {
+  //   axios.get("https://dev.to/api/articles?username=cdvillard&tag=cdvillard")
+  //     .then(response => {
+  //       console.log(response.data)
+  //       this.blogList = [...response.data];
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     })
+  // }
 }
 </script>
 
 <style>
-  h1 {
-
-  }
   img {
     display: block;
     border-radius: 100%;
