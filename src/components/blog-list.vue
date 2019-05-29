@@ -26,9 +26,9 @@ export default {
     }
   },
   mounted() {
-    axios.get("https://dev.to/api/articles?username=cdvillard&tag=cdvillard")
+    axios.get("https://dev.to/api/articles?&tag=cdvillard")
       .then(response => {
-        console.log(response.data)
+        console.log(response.data);
         this.blogList = [...response.data];
       })
       .catch(err => {

@@ -36,16 +36,6 @@ export default {
   metaInfo: {
     title: 'Charles Villard'
   },
-  //   mounted() {
-  //   axios.get("https://dev.to/api/articles?username=cdvillard&tag=cdvillard")
-  //     .then(response => {
-  //       console.log(response.data)
-  //       this.blogList = [...response.data];
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     })
-  // }
 }
 </script>
 
