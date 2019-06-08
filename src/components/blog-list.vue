@@ -28,7 +28,6 @@ export default {
   mounted() {
     axios.get("https://dev.to/api/articles?&tag=cdvillard")
       .then(response => {
-        console.log(response.data);
         this.blogList = [...response.data];
       })
       .catch(err => {
