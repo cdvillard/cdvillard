@@ -6,5 +6,10 @@
 
 module.exports = {
   siteName: 'Charles Villard',
-  plugins: []
+  plugins: [{
+    use: `gridsome-plugin-netlify-cms`,
+    options: {
+      enableIdentityWidget: true
+    }
+  }]
 }
