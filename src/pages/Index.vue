@@ -46,7 +46,7 @@
       </li>
       <li>
         <span class="bullet-point">📄</span>Take a gander at
-        <g-link to="~/assets/files/CDVillard.pdf" target="_blank" rel="noopener">my resume.</g-link>
+        <g-link to="~/assets/files/CDVResume.pdf" target="_blank" rel="noopener">my resume.</g-link>
       </li>
       <li>
         <span class="bullet-point">📧</span>
