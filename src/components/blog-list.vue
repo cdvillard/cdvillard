@@ -1,19 +1,34 @@
 <template>
   <div>
     <h2>Blog Roll</h2>
-    <blog-preview v-for="blog of blogList"
+    <blog-preview
+      v-for="blog of blogList"
       :key="blog.id"
       :blog-title="blog.title"
       :metadata="blog.published_at"
       :blog-description="blog.description"
       :blog-link="blog.canonical_url"
     ></blog-preview>
+    <ul>
+      <li v-for="edge in $static.posts.edges" :key="edge.node.title">{{edge.node.title}}</li>
+    </ul>
   </div>
 </template>
 
+<static-query>
+  query Blogs {
+    posts: allBlogPost {
+      edges {
+        node {
+          title
+        }
+      }
+    }
+  }
+</static-query>
 
 <script>
-import BlogPreview from './blog-preview.vue';
+import BlogPreview from "./blog-preview.vue";
 import axios from "axios";
 
 export default {
@@ -23,16 +38,17 @@ export default {
   data() {
     return {
       blogList: []
-    }
+    };
   },
   mounted() {
-    axios.get("https://dev.to/api/articles?&tag=cdvillard")
+    axios
+      .get("https://dev.to/api/articles?&tag=cdvillard")
       .then(response => {
         this.blogList = [...response.data];
       })
       .catch(err => {
         console.log(err);
-      })
+      });
   }
-}
+};
 </script>

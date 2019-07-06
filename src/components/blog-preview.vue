@@ -1,36 +1,42 @@
 <template>
-
-    <div>
-      <h2><a :href="blogLink">{{blogTitle}}</a></h2>
-      <p>{{blogDescription}}</p>
-    </div>
-
+  <div>
+    <h2></h2>
+    <h2>
+      <a :href="blogLink">{{blogTitle}}</a>
+    </h2>
+    <p>{{blogDescription}}</p>
+  </div>
 </template>
 
-<style>
-
+<style lang="scss">
+div {
+  p {
+    font-style: oblique;
+  }
+}
 </style>
+
 
 <script>
 export default {
-  name: 'BlogPreview',
+  name: "BlogPreview",
   props: {
     blogTitle: {
       type: String,
-      required: true,
+      required: true
     },
     metadata: {
       type: String,
-      required: true,
+      required: true
     },
-    blogDescription : {
+    blogDescription: {
       type: String,
-      required: true,
+      required: true
     },
     blogLink: {
       type: String,
-      required: true,
+      required: true
     }
   }
-}
+};
 </script>
