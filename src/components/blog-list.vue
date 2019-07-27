@@ -9,23 +9,8 @@
       :blog-description="blog.description"
       :blog-link="blog.canonical_url"
     ></blog-preview>
-    <ul>
-      <li v-for="edge in $static.posts.edges" :key="edge.node.title">{{edge.node.title}}</li>
-    </ul>
   </div>
 </template>
-
-<static-query>
-  query Blogs {
-    posts: allBlogPost {
-      edges {
-        node {
-          title
-        }
-      }
-    }
-  }
-</static-query>
 
 <script>
 import BlogPreview from "./blog-preview.vue";
