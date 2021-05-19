@@ -7,7 +7,7 @@
       src="~/assets/images/headshot.jpg"
     />
 
-    <h1>Thanks for visiting!</h1>
+    <h1>Hi! I'm Charles!</h1>
 
     <p>I'm going through a little bit of a transition as I rebuild my site, so this is a small "pardon the dust" placeholder until I'm back up and running. In the meantime, feel free to:</p>
 
