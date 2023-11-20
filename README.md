@@ -1,4 +1,4 @@
-![image](https://github.com/cdvillard/cdvillard/assets/6250214/982e8751-53a6-4c11-a3d6-d7df91fdcb42)
+![image](https://github.com/cdvillard/cdvillard/assets/6250214/e2fa28d4-b2a0-4b9a-acda-e854e6adb839)
 
 ### Hi there 👋
 
