@@ -6,6 +6,7 @@ My name is [Charles Villard](https://www.charlesvillard.co). I'm a software engi
 
 In my downtime, I'm working on improving myself as an engineer through projects and tutorials. Expect more to come soon!
 
+[![@cdvillard Astro contributions](https://astro.badg.es/v2/contributor/cdvillard.svg)](https://astro.badg.es/contributor/cdvillard/)
 <!--
 Content templates:
 
